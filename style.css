@@ -1,0 +1,240 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+}
+
+.units {
+    max-width: 50px;
+    max-height: 50px;
+    /* border: 3px solid #fff; 
+    margin: 2px;
+    border-radius: 3px;
+    flex: 1 1 60px;
+    display: flex;*/
+    background: #dde;
+    box-sizing: border-box;
+    cursor: pointer;
+
+}
+
+.charBtn {
+    display: flex;
+    width: 56px;
+    height: 56px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+    margin: 2px;
+    border: 3px solid #fff;
+    box-shadow: 0 0 1px 1px #aaa;
+    background-color: #fff;
+}
+
+.scrContainer {
+    display: flex;
+    width: 100%vw;
+    min-height: 100%vh;
+    align-items: center;
+    justify-content: center;
+    background: #121212;
+    padding: 30px 0 50px 0;
+}
+
+#charContainer {
+    display: grid;
+    grid-template-columns: repeat(15, 1fr);
+    box-sizing: border-box;
+    justify-content: center;
+}
+
+#charModal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+}
+
+#charModal.show {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.modalContainer {
+    background-color: #121212;
+    width: 500px;
+    max-width: 90%;
+    height: 90%;
+    overflow-y: scroll;
+    border-radius: 10px;
+    padding: 30px 50px;
+    text-align: center;
+}
+
+.modalContainer::-webkit-scrollbar {
+    display: none;
+}
+
+#closeBtn {
+    position: fixed;
+    padding: 1px 7px;
+    font-size: 20px;
+    border-radius: 10px;
+    color: #121212;
+    background: #dfdfdf;
+    border: none;
+}
+
+.callout {
+    text-align: right;
+}
+
+/*.assetsContainer {
+    /*position: fixed;
+    background-color: #121212;
+    width: 60%;
+    min-width: 340px;
+    max-height: 90%;
+    box-sizing: border-box;
+    overflow-y: scroll;
+}*/
+
+.gifArt {
+    max-width: 300px;
+    padding: 10px 0 30px 0;
+}
+
+.gifContainer {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.fullArt {
+    max-width: 300px;
+    max-height: 300px;
+    padding: 10px 0 30px 0;
+}
+
+.fullartContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.squareArt {
+    max-width: 100px;
+    padding: 10px 0 30px 0;
+}
+
+.squareContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.artName {
+    padding: 0;
+    margin: 0;
+    color: #dfdfdf;
+    font-family: monospace;
+}
+
+/* media queries */
+
+@media(max-width: 970px) {
+    #charContainer {
+        grid-template-columns: repeat(14, 1fr);
+    }
+}
+
+@media(max-width: 910px) {
+    #charContainer {
+        grid-template-columns: repeat(13, 1fr);
+    }
+}
+
+@media(max-width: 840px) {
+    #charContainer {
+        grid-template-columns: repeat(12, 1fr);
+    }
+}
+
+@media(max-width: 790px) {
+    #charContainer {
+        grid-template-columns: repeat(11, 1fr);
+    }
+}
+
+@media(max-width: 730px) {
+    #charContainer {
+        grid-template-columns: repeat(10, 1fr);
+    }
+}
+
+@media(max-width: 670px) {
+    #charContainer {
+        grid-template-columns: repeat(9, 1fr);
+    }
+}
+
+@media(max-width: 610px) {
+    #charContainer {
+        grid-template-columns: repeat(8, 1fr);
+    }
+}
+
+@media(max-width: 520px) {
+    #charContainer {
+        grid-template-columns: repeat(7, 1fr);
+    }
+}
+
+@media(max-width: 490px) {
+    #charContainer {
+        grid-template-columns: repeat(6, 1fr);
+    }
+}
+
+@media(max-width: 410px) {
+    #charContainer {
+        grid-template-columns: repeat(6, 1fr);
+    }
+}
+@media(max-width: 380px) {
+    #charContainer {
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
